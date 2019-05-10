@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_device"
+        android:layout_above="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/et_conent"
+        android:layout_above="@+id/bt_play_a"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:text="http://www.yangbin18.top/test/test.jpg"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/bt_play_a"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/exit"
+        android:text="播放音频"/>
+    <Button
+        android:id="@+id/bt_play_v"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/exit"
+        android:layout_toRightOf="@+id/bt_play_a"
+        android:text="播放视屏"/>
+    <Button
+        android:id="@+id/bt_play_i"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/exit"
+        android:layout_toLeftOf="@+id/bt_play_a"
+        android:text="播放图片"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="停止播放并退出"/>
+</RelativeLayout>
